@@ -1,0 +1,4 @@
+FileWriter phrase
+BufferedWriter phrase
+BufferedWriter phrase
+FileWriter phrase
