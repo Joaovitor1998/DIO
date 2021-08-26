@@ -1,0 +1,34 @@
+<h2>Room Detail</h2>
+
+<hr>
+
+<div *ngIf="room" class="roomDetails">
+    <div>
+        <label>
+            <b>Name:</b>
+            <p>{{ room.name }}</p>
+        </label> 
+    </div>
+    <div>
+        <label>
+            <b>Date:</b>
+            <p>{{ room.date }}</p>
+        </label> 
+    </div>
+    <div>
+        <label>
+            <b>Start:</b>
+            <p>{{ room.startHour }}</p>
+        </label> 
+    </div>
+    <div>
+        <label>
+            <b>End:</b>
+            <p>{{ room.endHour }}</p>
+        </label> 
+    </div>
+    <button (click)="list()" class="btn btn-primary">Back to Room List</button>
+</div>
+
+<br><br>
+

@@ -1,0 +1,23 @@
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.roomDetails{
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+}
+button{
+    margin-top: 15px;
+}
+
+label b{
+    font-size: 20px;
+    
+}
+
+label p{
+    margin-top: 3px;
+    margin-left: 7px;
+}
