@@ -8,3 +8,5 @@ Respository made for DIO courses projects.
 ## Product Catalog
 
 ## People-API
+
+## Testes unitários para uma API de estoque de cerveja (Professor Rodrigo Peleias)
