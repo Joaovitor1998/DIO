@@ -2,34 +2,21 @@ package domain;
 
 import java.time.LocalDate;
 
-public class Mentorship {
-    private String title;
-    private String description;
+public class Mentorship extends Content {
+
     private LocalDate date;
 
     public Mentorship() {
     }
 
-    public Mentorship(String title, String description, LocalDate date) {
-        this.title = title;
-        this.description = description;
+    public Mentorship(LocalDate date) {
+
         this.date = date;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    @Override
+    public double calculateXP() {
+        return DEFAULT_XP * 2;
     }
 
     public LocalDate getDate() {
@@ -42,7 +29,7 @@ public class Mentorship {
 
     @Override
     public String toString() {
-        return "Mentorship [date=" + date + ", description=" + description + ", title=" + title + "]";
+        return "Mentorship [date=" + date + ", description=" + getDescription() + ", title=" + getTitle() + "]";
     }
 
 }

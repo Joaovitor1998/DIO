@@ -1,37 +1,23 @@
 package domain;
 
-public class Course {
-    private String title;
-    private String description;
+public class Course extends Content {
+
     private int workload;
 
     public Course() {
     }
 
-    public Course(String title, String description, int workload) {
-        this.title = title;
-        this.description = description;
+    public Course(int workload) {
         this.workload = workload;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
+    @Override
+    public double calculateXP() {
+        return DEFAULT_XP * workload;
     }
 
     public int getWorkload() {
         return workload;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public void setWorkload(int workload) {
@@ -40,7 +26,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return "Course [description=" + description + ", title=" + title + ", workload=" + workload + "]";
+        return "Course [description=" + getDescription() + ", title=" + getTitle() + ", workload=" + workload + "]";
     }
 
 }
